@@ -15,7 +15,7 @@ Generate new token 클릭
 
 git remote set-url origin https://<TOKEN>@github.com/gyeongjuhs2025/nbo.git
 
-//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////
 3. 깃허브 레포에 푸시할 로컬 소스코드를 탐색기로 열고 > 우클릭 > Open bash here > git bash 창이 열림.
 
 user@▒▒▒▒▒▒ MINGW64 /e/2025,NBO,biz,pro/nbo,11-14

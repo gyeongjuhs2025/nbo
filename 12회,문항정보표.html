@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제12회 전국상업경진대회 문항정보표</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            font-size: 12px;
+            margin: 20px;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #333;
+            padding-bottom: 15px;
+        }
+        
+        .header h1 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        
+        .header h2 {
+            font-size: 14px;
+            margin: 3px 0;
+            color: #666;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border: 2px solid #333;
+        }
+        
+        th {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+            font-size: 11px;
+            padding: 10px 5px;
+            text-align: center;
+            border: 1px solid #333;
+            vertical-align: middle;
+        }
+        
+        td {
+            border: 1px solid #666;
+            padding: 8px 5px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 11px;
+        }
+        
+        .problem-num {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            width: 50px;
+        }
+        
+        .answer-col {
+            background-color: #f8f9fa;
+            font-size: 10px;
+            width: 80px;
+        }
+        
+        .content-col {
+            text-align: left;
+            background-color: #fff;
+            padding: 8px 10px;
+            width: 300px;
+            line-height: 1.4;
+        }
+        
+        .content-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+        
+        .content-detail {
+            font-size: 10px;
+            color: #666;
+        }
+        
+        .behavior-col {
+            width: 40px;
+            background-color: #e8f5e8;
+        }
+        
+        .difficulty-col {
+            width: 40px;
+            background-color: #fff3cd;
+        }
+        
+        .author-col {
+            background-color: #f1f3f4;
+            width: 80px;
+        }
+        
+        .score-col {
+            background-color: #d4edda;
+            font-weight: bold;
+            width: 50px;
+        }
+        
+        .check-mark {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .total-row {
+            background-color: #34495e;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .total-row td {
+            background-color: #34495e;
+            color: white;
+        }
+        
+        .note {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 5px solid #007bff;
+            font-size: 11px;
+        }
+        
+        .note h3 {
+            margin-top: 0;
+            color: #495057;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>제12회 전국상업경진대회</h1>
+        <h2>( 비즈니스프로그래밍 ) 문항정보표</h2>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">문항<br>번호</th>
+                <th rowspan="2">정답</th>
+                <th rowspan="2">평가내용</th>
+                <th colspan="3">행동</th>
+                <th colspan="3">난이도</th>
+                <th rowspan="2">출제<br>위원</th>
+                <th rowspan="2">배점</th>
+            </tr>
+            <tr>
+                <th>지<br>식<br>이<br>해</th>
+                <th>적<br>용</th>
+                <th>탐<br>구</th>
+                <th>상</th>
+                <th>중</th>
+                <th>하</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 문제 1 -->
+            <tr>
+                <td class="problem-num">1</td>
+                <td class="answer-col">정답 및<br>채점기준표<br>참조</td>
+                <td class="content-col">
+                    <div class="content-title">[하노이 탑]</div>
+                    <div class="content-detail">
+                        · 재귀적 사고 능력<br>
+                        · 수학적 점화식 이해<br>
+                        · 알고리즘 구현 능력
+                    </div>
+                </td>
+                <td class="behavior-col"><span class="check-mark">○</span></td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"></td>
+                <td class="difficulty-col"></td>
+                <td class="difficulty-col"><span class="check-mark">○</span></td>
+                <td class="difficulty-col"></td>
+                <td class="author-col">김○○</td>
+                <td class="score-col">12</td>
+            </tr>
+
+            <!-- 문제 2 -->
+            <tr>
+                <td class="problem-num">2</td>
+                <td class="answer-col">정답 및<br>채점기준표<br>참조</td>
+                <td class="content-col">
+                    <div class="content-title">[읽고 말하기 수열]</div>
+                    <div class="content-detail">
+                        · 수열 패턴 인식<br>
+                        · 문자열 처리 능력<br>
+                        · 반복 구조 활용
+                    </div>
+                </td>
+                <td class="behavior-col"><span class="check-mark">○</span></td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"></td>
+                <td class="difficulty-col"></td>
+                <td class="difficulty-col"><span class="check-mark">○</span></td>
+                <td class="difficulty-col"></td>
+                <td class="author-col">이○○</td>
+                <td class="score-col">12</td>
+            </tr>
+
+            <!-- 문제 3 -->
+            <tr>
+                <td class="problem-num">3</td>
+                <td class="answer-col">정답 및<br>채점기준표<br>참조</td>
+                <td class="content-col">
+                    <div class="content-title">[포켓몬 카드 케이스]</div>
+                    <div class="content-detail">
+                        · 최적화 문제 해결<br>
+                        · 수학적 계산 능력<br>
+                        · 조건 분기 처리
+                    </div>
+                </td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"><span class="check-mark">○</span></td>
+                <td class="behavior-col"></td>
+                <td class="difficulty-col"></td>
+                <td class="difficulty-col"><span class="check-mark">○</span></td>
+                <td class="difficulty-col"></td>
+                <td class="author-col">박○○</td>
+                <td class="score-col">12</td>
+            </tr>
+
+            <!-- 문제 4 -->
+            <tr>
+                <td class="problem-num">4</td>
+                <td class="answer-col">정답 및<br>채점기준표<br>참조</td>
+                <td class="content-col">
+                    <div class="content-title">[회문(팰린드롬) 찾기]</div>
+                    <div class="content-detail">
+                        · 문자열 분석 능력<br>
+                        · 패턴 매칭 알고리즘<br>
+                        · 대소문자 처리
+                    </div>
+                </td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"><span class="check-mark">○</span></td>
+                <td class="behavior-col"></td>
+                <td class="difficulty-col"></td>
+                <td class="difficulty-col"></td>
+                <td class="difficulty-col"><span class="check-mark">○</span></td>
+                <td class="author-col">최○○</td>
+                <td class="score-col">12</td>
+            </tr>
+
+            <!-- 문제 5 -->
+            <tr>
+                <td class="problem-num">5</td>
+                <td class="answer-col">정답 및<br>채점기준표<br>참조</td>
+                <td class="content-col">
+                    <div class="content-title">[채권 투자 수익률]</div>
+                    <div class="content-detail">
+                        · 금융 수학 활용<br>
+                        · 복잡한 계산 처리<br>
+                        · 실무 문제 해결
+                    </div>
+                </td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"><span class="check-mark">○</span></td>
+                <td class="difficulty-col"><span class="check-mark">○</span></td>
+                <td class="difficulty-col"></td>
+                <td class="difficulty-col"></td>
+                <td class="author-col">정○○</td>
+                <td class="score-col">12</td>
+            </tr>
+
+            <!-- 문제 6 -->
+            <tr>
+                <td class="problem-num">6</td>
+                <td class="answer-col">정답 및<br>채점기준표<br>참조</td>
+                <td class="content-col">
+                    <div class="content-title">[고속도로 광고판 배치]</div>
+                    <div class="content-detail">
+                        · 동적 프로그래밍<br>
+                        · 최적화 알고리즘<br>
+                        · 배열 활용 능력
+                    </div>
+                </td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"><span class="check-mark">○</span></td>
+                <td class="difficulty-col"></td>
+                <td class="difficulty-col"><span class="check-mark">○</span></td>
+                <td class="difficulty-col"></td>
+                <td class="author-col">강○○</td>
+                <td class="score-col">12</td>
+            </tr>
+
+            <!-- 문제 7 -->
+            <tr>
+                <td class="problem-num">7</td>
+                <td class="answer-col">정답 및<br>채점기준표<br>참조</td>
+                <td class="content-col">
+                    <div class="content-title">[약통 서랍 약 분류]</div>
+                    <div class="content-detail">
+                        · 탐욕 알고리즘<br>
+                        · 자료구조 활용<br>
+                        · 복잡한 조건 처리
+                    </div>
+                </td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"><span class="check-mark">○</span></td>
+                <td class="difficulty-col"><span class="check-mark">○</span></td>
+                <td class="difficulty-col"></td>
+                <td class="difficulty-col"></td>
+                <td class="author-col">윤○○</td>
+                <td class="score-col">14</td>
+            </tr>
+
+            <!-- 문제 8 -->
+            <tr>
+                <td class="problem-num">8</td>
+                <td class="answer-col">정답 및<br>채점기준표<br>참조</td>
+                <td class="content-col">
+                    <div class="content-title">[3차원 틱택토]</div>
+                    <div class="content-detail">
+                        · 3차원 배열 처리<br>
+                        · 공간 좌표 인식<br>
+                        · 복잡한 승리 조건
+                    </div>
+                </td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"></td>
+                <td class="behavior-col"><span class="check-mark">○</span></td>
+                <td class="difficulty-col"><span class="check-mark">○</span></td>
+                <td class="difficulty-col"></td>
+                <td class="difficulty-col"></td>
+                <td class="author-col">조○○</td>
+                <td class="score-col">14</td>
+            </tr>
+
+            <!-- 합계 -->
+            <tr class="total-row">
+                <td><strong>계</strong></td>
+                <td></td>
+                <td></td>
+                <td><strong>2</strong></td>
+                <td><strong>2</strong></td>
+                <td><strong>4</strong></td>
+                <td><strong>3</strong></td>
+                <td><strong>3</strong></td>
+                <td><strong>2</strong></td>
+                <td></td>
+                <td><strong>100</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <h3>📋 문항정보표 분석</h3>
+        <ul>
+            <li><strong>행동 영역 분포:</strong> 지식이해(2문항), 적용(2문항), 탐구(4문항)</li>
+            <li><strong>난이도 분포:</strong> 상(3문항), 중(3문항), 하(2문항)</li>
+            <li><strong>배점 구조:</strong> 1~6번(각 12점), 7~8번(각 14점), 총 100점</li>
+            <li><strong>주요 평가 영역:</strong> 알고리즘, 자료구조, 수학적 사고, 실무 적용</li>
+        </ul>
+    </div>
+
+    <div style="margin-top: 30px; text-align: center; font-size: 11px; color: #666;">
+        <p><strong>제12회 전국상업경진대회 조직위원회</strong></p>
+        <p>출제위원장: _______________  검토위원: _______________</p>
+    </div>
+</body>
+</html>

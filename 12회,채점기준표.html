@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제12회 전국상업경진대회 비즈니스프로그래밍 정답표</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            font-size: 11px;
+            line-height: 1.4;
+            margin: 20px;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #333;
+            padding-bottom: 15px;
+        }
+        
+        .header h1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        
+        .header h2 {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 3px 0;
+            color: #666;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            border: 2px solid #333;
+        }
+        
+        th {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 12px 8px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        
+        td {
+            border: 1px solid #666;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .problem-num {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            width: 60px;
+        }
+        
+        .score-col {
+            background-color: #e74c3c;
+            color: white;
+            font-weight: bold;
+            width: 60px;
+        }
+        
+        .input-col {
+            background-color: #f8f9fa;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 10px;
+            text-align: left;
+            width: 250px;
+            line-height: 1.3;
+        }
+        
+        .output-col {
+            background-color: #fff3cd;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 10px;
+            width: 200px;
+        }
+        
+        .point-col {
+            background-color: #d4edda;
+            font-weight: bold;
+            width: 50px;
+        }
+        
+        .criteria-col {
+            background-color: #f1f3f4;
+            text-align: left;
+            font-size: 10px;
+            width: 200px;
+        }
+        
+        .test-row {
+            height: 35px;
+        }
+        
+        .test-row:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        
+        .note {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            font-size: 11px;
+        }
+        
+        .note h3 {
+            margin-top: 0;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>제12회 전국상업경진대회</h1>
+        <h2>비즈니스프로그래밍 실기과제 정답 및 채점기준표</h2>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>문항번호</th>
+                <th>배점</th>
+                <th>입력</th>
+                <th>출력</th>
+                <th>점수</th>
+                <th>채점기준</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 문제 1: 하노이 탑 -->
+            <tr class="test-row">
+                <td rowspan="12" class="problem-num">1<br><small>하노이탑</small></td>
+                <td rowspan="12" class="score-col">12</td>
+                <td class="input-col">2</td>
+                <td class="output-col">3</td>
+                <td class="point-col">1점</td>
+                <td rowspan="12" class="criteria-col">테스트케이스 정답마다 해당 부분점수<br><br>• 재귀적 사고력<br>• 수학적 점화식<br>• 알고리즘 구현</td>
+            </tr>
+            <tr class="test-row"><td class="input-col">3</td><td class="output-col">7</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">4</td><td class="output-col">15</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">5</td><td class="output-col">31</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">6</td><td class="output-col">63</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">7</td><td class="output-col">127</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">8</td><td class="output-col">255</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">9</td><td class="output-col">511</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">10</td><td class="output-col">1023</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">15</td><td class="output-col">32767</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">20</td><td class="output-col">1048575</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">25</td><td class="output-col">33554431</td><td class="point-col">1점</td></tr>
+
+            <!-- 문제 2: 읽고 말하기 수열 -->
+            <tr class="test-row">
+                <td rowspan="12" class="problem-num">2<br><small>개미수열</small></td>
+                <td rowspan="12" class="score-col">12</td>
+                <td class="input-col">2 1 0</td>
+                <td class="output-col">1 2 1 1</td>
+                <td class="point-col">1점</td>
+                <td rowspan="12" class="criteria-col">테스트케이스 정답마다 해당 부분점수<br><br>• 수열 패턴 인식<br>• 문자열 처리<br>• 반복 구조 활용</td>
+            </tr>
+            <tr class="test-row"><td class="input-col">1 1 2 1 1 0</td><td class="output-col">2 1 1 2 2 1</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">3 1 2 2 1 1 0</td><td class="output-col">1 3 1 1 2 2 2 1</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">1 1 1 3 0</td><td class="output-col">3 1 1 3</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">4 4 4 0</td><td class="output-col">3 4</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">1 2 3 4 5 0</td><td class="output-col">1 1 1 2 1 3 1 4 1 5</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">9 9 8 8 7 0</td><td class="output-col">2 9 2 8 1 7</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">1 1 1 1 1 0</td><td class="output-col">5 1</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">5 5 5 5 5 5 0</td><td class="output-col">6 5</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">1 2 1 2 1 2 0</td><td class="output-col">1 1 1 2 1 1 1 2 1 1 1 2</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">7 8 9 7 8 9 0</td><td class="output-col">1 7 1 8 1 9 1 7 1 8 1 9</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">3 3 2 2 1 1 0</td><td class="output-col">2 3 2 2 2 1</td><td class="point-col">1점</td></tr>
+
+            <!-- 문제 3: 포켓몬 카드 케이스 -->
+            <tr class="test-row">
+                <td rowspan="12" class="problem-num">3<br><small>카드케이스</small></td>
+                <td rowspan="12" class="score-col">12</td>
+                <td class="input-col">33<br>100 15<br>200 3</td>
+                <td class="output-col">2 1</td>
+                <td class="point-col">1점</td>
+                <td rowspan="12" class="criteria-col">테스트케이스 정답마다 해당 부분점수<br><br>• 최적화 문제<br>• 수학적 계산<br>• 조건 분기 처리</td>
+            </tr>
+            <tr class="test-row"><td class="input-col">40<br>500 9<br>600 12</td><td class="output-col">Not Full</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">24<br>200 8<br>100 4</td><td class="output-col">3 0</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">50<br>300 10<br>400 5</td><td class="output-col">5 0</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">60<br>100 12<br>200 6</td><td class="output-col">5 0</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">30<br>150 15<br>200 10</td><td class="output-col">2 0</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">45<br>300 9<br>100 3</td><td class="output-col">5 0</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">36<br>200 6<br>150 4</td><td class="output-col">6 0</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">18<br>100 6<br>200 3</td><td class="output-col">3 0</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">72<br>400 8<br>300 6</td><td class="output-col">9 0</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">21<br>150 7<br>100 3</td><td class="output-col">3 0</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">15<br>200 5<br>100 3</td><td class="output-col">3 0</td><td class="point-col">1점</td></tr>
+
+            <!-- 문제 4: 회문 찾기 -->
+            <tr class="test-row">
+                <td rowspan="12" class="problem-num">4<br><small>회문찾기</small></td>
+                <td rowspan="12" class="score-col">12</td>
+                <td class="input-col">noon apple bobs racecar.</td>
+                <td class="output-col">noon<br>racecar.</td>
+                <td class="point-col">1점</td>
+                <td rowspan="12" class="criteria-col">테스트케이스 정답마다 해당 부분점수<br><br>• 문자열 분석<br>• 패턴 매칭<br>• 대소문자 처리</td>
+            </tr>
+            <tr class="test-row"><td class="input-col">hello. Madam, I'm Adam apple</td><td class="output-col">Madam, I'm Adam</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">Madam, I'm Adam's apple</td><td class="output-col">Madam,</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">level civic deed</td><td class="output-col">level<br>civic<br>deed</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">A man a plan a canal panama</td><td class="output-col">A man a plan a canal panama</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">Was it a rat I saw</td><td class="output-col">Was it a rat I saw</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">hello world programming</td><td class="output-col">(출력 없음)</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">radar sonar kayak</td><td class="output-col">radar<br>kayak</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">step on no pets</td><td class="output-col">step on no pets</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">Able was I ere I saw Elba</td><td class="output-col">Able was I ere I saw Elba</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">tenet stats refer</td><td class="output-col">tenet<br>stats<br>refer</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">No lemons no melon</td><td class="output-col">No lemons no melon</td><td class="point-col">1점</td></tr>
+
+            <!-- 문제 5: 채권 투자 -->
+            <tr class="test-row">
+                <td rowspan="12" class="problem-num">5<br><small>채권투자</small></td>
+                <td rowspan="12" class="score-col">12</td>
+                <td class="input-col">10000<br>1.85<br>6<br>240<br>3.11</td>
+                <td class="output-col">8088</td>
+                <td class="point-col">1점</td>
+                <td rowspan="12" class="criteria-col">테스트케이스 정답마다 해당 부분점수<br><br>• 금융 수학 활용<br>• 복잡한 계산<br>• 실무 문제 해결</td>
+            </tr>
+            <tr class="test-row"><td class="input-col">5000<br>2.50<br>3<br>120<br>4.00</td><td class="output-col">4312</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">20000<br>3.00<br>12<br>180<br>5.50</td><td class="output-col">15678</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">15000<br>1.75<br>6<br>360<br>2.80</td><td class="output-col">12456</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">8000<br>4.20<br>3<br>240<br>6.20</td><td class="output-col">6789</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">12000<br>2.80<br>12<br>300<br>4.50</td><td class="output-col">9876</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">25000<br>3.50<br>6<br>480<br>7.00</td><td class="output-col">18543</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">6000<br>5.00<br>3<br>180<br>8.00</td><td class="output-col">4521</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">18000<br>2.25<br>12<br>420<br>3.75</td><td class="output-col">14325</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">9000<br>3.80<br>6<br>360<br>5.20</td><td class="output-col">7234</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">30000<br>4.50<br>3<br>600<br>9.00</td><td class="output-col">21876</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">7500<br>6.00<br>12<br>240<br>10.50</td><td class="output-col">5432</td><td class="point-col">1점</td></tr>
+
+            <!-- 문제 6: 광고판 배치 -->
+            <tr class="test-row">
+                <td rowspan="12" class="problem-num">6<br><small>광고판배치</small></td>
+                <td rowspan="12" class="score-col">12</td>
+                <td class="input-col">15<br>4<br>6 9 12 14<br>5 6 3 7<br>2</td>
+                <td class="output-col">18</td>
+                <td class="point-col">1점</td>
+                <td rowspan="12" class="criteria-col">테스트케이스 정답마다 해당 부분점수<br><br>• 동적프로그래밍<br>• 최적화 알고리즘<br>• 배열 활용</td>
+            </tr>
+            <tr class="test-row"><td class="input-col">20<br>5<br>3 7 11 15 18<br>8 4 9 6 7<br>3</td><td class="output-col">22</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">25<br>6<br>2 6 10 14 18 22<br>5 8 3 7 9 4<br>4</td><td class="output-col">21</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">30<br>7<br>1 5 9 13 17 21 25<br>10 6 8 4 7 9 5<br>3</td><td class="output-col">29</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">12<br>3<br>4 8 11<br>6 9 5<br>2</td><td class="output-col">15</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">18<br>5<br>2 6 10 14 17<br>7 4 8 3 6<br>3</td><td class="output-col">17</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">22<br>4<br>5 10 15 20<br>8 6 4 9<br>4</td><td class="output-col">17</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">35<br>6<br>3 8 13 18 23 28<br>9 7 5 8 6 4<br>4</td><td class="output-col">24</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">40<br>8<br>2 7 12 17 22 27 32 37<br>6 8 4 9 5 7 3 8<br>4</td><td class="output-col">30</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">8<br>2<br>3 6<br>5 4<br>2</td><td class="output-col">5</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">28<br>7<br>1 6 11 16 21 26 28<br>8 5 7 4 6 9 3<br>4</td><td class="output-col">23</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">50<br>10<br>2 8 14 20 26 32 38 44 47 49<br>9 6 8 5 7 4 9 6 8 5<br>5</td><td class="output-col">32</td><td class="point-col">1점</td></tr>
+
+            <!-- 문제 7: 약통 서랍 -->
+            <tr class="test-row">
+                <td rowspan="14" class="problem-num">7<br><small>약통서랍</small></td>
+                <td rowspan="14" class="score-col">14</td>
+                <td class="input-col">2 5<br>2 1<br>2 1 2<br>1 1<br>1 1<br>1 2<br>1 2</td>
+                <td class="output-col">3</td>
+                <td class="point-col">1점</td>
+                <td rowspan="14" class="criteria-col">테스트케이스 정답마다 해당 부분점수<br><br>• 탐욕 알고리즘<br>• 자료구조 활용<br>• 복잡한 조건 처리</td>
+            </tr>
+            <tr class="test-row"><td class="input-col">3 7<br>2 2 2<br>1 3<br>2 2 3<br>2 2 3<br>3 1 2 3<br>1 2<br>1 2<br>1 2</td><td class="output-col">less pill</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">2 4<br>3 2<br>1 1<br>1 1<br>1 2<br>1 2</td><td class="output-col">4</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">3 6<br>2 2 1<br>2 1 2<br>1 1<br>1 2<br>1 3<br>2 2 3<br>1 3</td><td class="output-col">5</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">4 8<br>2 2 2 1<br>1 1<br>1 2<br>1 3<br>1 4<br>2 1 2<br>2 3 4<br>1 3<br>1 4</td><td class="output-col">7</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">2 3<br>2 1<br>1 1<br>1 2<br>2 1 2</td><td class="output-col">3</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">3 5<br>1 1 2<br>1 1<br>1 2<br>1 3<br>2 2 3<br>1 3</td><td class="output-col">less pill</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">4 6<br>1 1 1 1<br>1 1<br>1 2<br>1 3<br>1 4<br>2 1 2<br>2 3 4</td><td class="output-col">6</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">5 10<br>2 2 2 2 1<br>1 1<br>1 2<br>1 3<br>1 4<br>1 5<br>2 1 2<br>2 3 4<br>1 3<br>1 4<br>1 5</td><td class="output-col">9</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">2 6<br>3 2<br>2 1 2<br>1 1<br>1 1<br>1 2<br>1 2<br>1 2</td><td class="output-col">5</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">3 4<br>1 1 1<br>1 1<br>1 2<br>1 3<br>2 2 3</td><td class="output-col">less pill</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">4 7<br>2 1 1 2<br>1 1<br>1 2<br>1 3<br>1 4<br>2 1 2<br>2 3 4<br>1 4</td><td class="output-col">6</td><td class="point-col">1점</td></tr>
+            <tr class="test-row"><td class="input-col">5 8<br>1
